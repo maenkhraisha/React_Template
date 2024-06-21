@@ -62,3 +62,5 @@
 20240612	13:20:49	3e724859-f8dc-41d8-ba40-a1da63b3d898	SyntaxError:Unexpected token 'e', "eyJhbGciOi"... is not valid JSON
 20240612	14:30:12	4afb6f5d-bb30-4063-bcc4-ee4590584d97	TypeError:authHeader?.startWith is not a function
 20240613	01:44:47	ff3ff693-9085-4542-bf5f-8af09cc42418	SyntaxError:Expected ',' or '}' after property value in JSON at position 12
+20240613	11:29:40	4b33ed2c-4eda-4212-a43c-95c1352082d1	SyntaxError:Expected double-quoted property name in JSON at position 46
+20240613	11:54:00	334bba9d-2821-4097-89b8-98e0f6db05c5	SyntaxError:Expected ',' or '}' after property value in JSON at position 38
