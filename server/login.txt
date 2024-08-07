@@ -1,0 +1,8 @@
+  user: admin
+  pwd: Admin@1580
+
+  user: user
+  pwd: Maen@12345
+
+  user:editor
+  pwd: Maen@12345

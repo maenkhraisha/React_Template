@@ -64,3 +64,19 @@
 20240613	01:44:47	ff3ff693-9085-4542-bf5f-8af09cc42418	SyntaxError:Expected ',' or '}' after property value in JSON at position 12
 20240613	11:29:40	4b33ed2c-4eda-4212-a43c-95c1352082d1	SyntaxError:Expected double-quoted property name in JSON at position 46
 20240613	11:54:00	334bba9d-2821-4097-89b8-98e0f6db05c5	SyntaxError:Expected ',' or '}' after property value in JSON at position 38
+20240622	16:23:51	1face404-2e5c-478d-b0d2-1b9630bc8bf0	TypeError:res.headers is not a function
+20240622	16:24:04	d846e75e-5816-4c15-9205-fd2c72e48aea	TypeError:res.headers is not a function
+20240622	16:24:29	40a3f90b-d4d8-4047-b31e-b0447f200b81	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:28:22	a8e0d884-8605-4b91-b729-21e3002c4665	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:35:58	aa4b30f4-c250-487e-8a91-c40a6b046250	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:36:42	848e4891-8141-4e12-8250-b1308ab86e62	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:37:00	fb284a09-70db-41f7-81a6-b974a0e14bc2	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:38:31	08da8803-b429-46b9-80ee-0fe9c8812ee6	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:38:49	89c4ac68-bfda-48e6-a8a1-9ea699bc0312	Error:ENOENT: no such file or directory, stat '/var/www/maen/React Template/server/views/index.html'
+20240622	16:51:34	5089d266-a5fe-4548-bba3-73c508d5f802	SyntaxError:Expected property name or '}' in JSON at position 6
+20240622	16:51:46	27f730e0-87f7-44ba-bfdf-9f969587b14a	SyntaxError:Expected property name or '}' in JSON at position 6
+20240622	17:20:24	2cfcfbb5-a597-4c9c-993d-5f26a10f91e1	TypeError:res.headers is not a function
+20240622	17:21:28	9b0735a3-0529-46da-8548-8b389f964c8c	SyntaxError:Expected double-quoted property name in JSON at position 52
+20240622	17:21:42	eb43ba26-7283-4012-b7dc-757c91059459	SyntaxError:Expected double-quoted property name in JSON at position 51
+20240622	17:52:13	43c63860-3ebb-4975-a053-7edbeeba2c73	TypeError:res.headers is not a function
+20240622	17:54:33	2f21c6da-6968-497e-855e-319a041355a2	TypeError:res.headers is not a function
