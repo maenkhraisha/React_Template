@@ -105,6 +105,7 @@ function UserEdit({ props }) {
     };
     return (
         <>
+            <h1>Edit user</h1>
             <form onSubmit={handleSubmit}>
                 {/* <input value={user?.username} placeholder={user?.username} /> */}
                 {/* <input type="text" id="id" value={user?._id} /> */}
