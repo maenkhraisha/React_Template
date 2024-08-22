@@ -1,0 +1,23 @@
+.user-list {
+    & > ul > li {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        grid-row-gap: 12px;
+
+        padding: 1rem;
+        border-radius: 6px;
+
+        cursor: pointer;
+        // padding: 6px;
+
+        & h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: #e8e8e884;
+        }
+    }
+}

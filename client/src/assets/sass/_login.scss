@@ -1,0 +1,30 @@
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 22px;
+
+    padding: 30px 100px;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-row-gap: 7px;
+    }
+    & .persistCheck {
+        font-size: 0.75rem;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    & .persistCheck label {
+        margin: 0;
+    }
+}
