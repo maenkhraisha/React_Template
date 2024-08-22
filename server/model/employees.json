@@ -1,22 +1,12 @@
 [
     {
-        "id" : 1,
-        "firstname": "Maen",
-        "lastname": "Kharaisha"
+        "id": 1,
+        "firstname": "Dave",
+        "lastname": "Gray"
     },
     {
-        "id" : 2,
-        "firstname": "Sara",
-        "lastname": "Alawen"
-    },
-    {
-        "id" : 3,
-        "firstname": "Alia",
-        "lastname": "Khraisha"
-    },
-    {
-        "id" : 4,
-        "firstname": "Tyma",
-        "lastname": "Khraisha"
+        "id": 2,
+        "firstname": "John",
+        "lastname": "Smith"
     }
 ]

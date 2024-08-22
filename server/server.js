@@ -3,58 +3,53 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const cors = require("cors");
-const allowedOrigions = require("./config/allowedOrigions");
-
+const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
 const verifyJWT = require("./middleware/verifyJWT");
-// const credentials = require("./middleware/credentials");
-
+const cookieParser = require("cookie-parser");
+const credentials = require("./middleware/credentials");
 const mongoose = require("mongoose");
 const connectDB = require("./config/dbConn");
-const cookieParser = require("cookie-parser");
-
 const PORT = process.env.PORT || 3500;
 
-// connect to mongoose DB
+// Connect to MongoDB
 connectDB();
 
-// custom midleware logger
+// custom middleware logger
 app.use(logger);
 
-// app.use(credentials);
-// app.use(cors(corsOptions));
+// Handle options credentials check - before CORS!
+// and fetch cookies credentials requirement
+app.use(credentials);
 
-// Define the CORS options
-const corsOptions = {
-    credentials: true,
-    origin: allowedOrigions, // Whitelist the domains you want to allow
-};
+// Cross Origin Resource Sharing
 app.use(cors(corsOptions));
 
-// built-in middleware
+// built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
+
+// built-in middleware for json
 app.use(express.json());
+
+//middleware for cookies
 app.use(cookieParser());
 
-// use public folder
-app.use(express.static(path.join(__dirname, "/public")));
-app.use("/subdir", express.static(path.join(__dirname, "/public")));
-app.use("/employees", express.static(path.join(__dirname, "/public")));
+//serve static files
+app.use("/", express.static(path.join(__dirname, "/public")));
 
-// routers
+// routes
 app.use("/", require("./routes/root"));
 app.use("/register", require("./routes/register"));
 app.use("/auth", require("./routes/auth"));
 app.use("/refresh", require("./routes/refresh"));
 app.use("/logout", require("./routes/logout"));
-// app.use("/subdir", require("./routes/subdir"));
 
 app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees"));
 app.use("/users", require("./routes/api/users"));
 
-app.all("/*", (req, res) => {
+app.all("*", (req, res) => {
     res.status(404);
     if (req.accepts("html")) {
         res.sendFile(path.join(__dirname, "views", "404.html"));
@@ -68,6 +63,6 @@ app.all("/*", (req, res) => {
 app.use(errorHandler);
 
 mongoose.connection.once("open", () => {
-    console.log("connected to mongoDB");
+    console.log("Connected to MongoDB");
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 });

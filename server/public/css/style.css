@@ -1,12 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background-color: black;
-  color: white;
-  min-height: 100vh;
-
-  font-size: 32px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    font-size: 36px;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #000;
+    display: grid;
+    place-content: center;
 }
